@@ -1,0 +1,67 @@
+
+> mwo-comp-api@1.0.0 start /home/ubuntu/http-test
+> node server "watch"
+
+Listening on http://localhost:3000
+
+> mwo-comp-api@1.0.0 start /home/ubuntu/http-test
+> node server "watch"
+
+Listening on http://localhost:3000
+[0mGET / [32m200 [0m5.683 ms - 744[0m
+[0mGET /css/index.css [36m304 [0m1.985 ms - -[0m
+[0mGET /css/index.css [36m304 [0m0.572 ms - -[0m
+
+> mwo-comp-api@1.0.0 start /home/ubuntu/http-test
+> node server "watch"
+
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1366:14)
+    at listenInCluster (net.js:1407:12)
+    at Server.listen (net.js:1495:7)
+    at Function.listen (/home/ubuntu/http-test/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/ubuntu/http-test/server.js:18:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! mwo-comp-api@1.0.0 start: `node server "watch"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the mwo-comp-api@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/ubuntu/.npm/_logs/2018-01-15T23_14_49_773Z-debug.log
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /home/ubuntu/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 /home/ubuntu/.nvm/versions/node/v9.4.0/lib/node_modules/npm
