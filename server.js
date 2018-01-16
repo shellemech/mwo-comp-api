@@ -1,33 +1,24 @@
 var express = require('express')
   , logger = require('morgan')
   , app = express()
-  , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
-  , basedir = 'source/templates/'
 
 app.use(logger('dev'))
-app.use(express.static(__dirname + '/static'))
+app.set('view engine', 'jade')
+app.set('views', './source/templates')
 
-app.get('/', function (req, res, next) {
-  try {
-    var html = template({ title: 'Home' })
-    res.send(html)
-  } catch (e) {
-    next(e)
-  }
+app.get('/', function(req, res) {
+  res.render('homepage')
 })
-
 app.get('/submit', function (req, res) {
-    var html = require('jade').renderFile(basedir + 'submit.jade')
-    res.send(html)
+  res.render('submit')
 });
 app.get('/contact', function (req, res) {
-    var html = require('jade').renderFile(basedir + 'contact.jade')
-    res.send(html)
+  res.render('contact')
 });
 app.get('/about', function (req, res) {
-    var html = require('jade').renderFile(basedir + 'about.jade')
-    res.send(html)
+  res.render('about')
 });
+
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
 })
