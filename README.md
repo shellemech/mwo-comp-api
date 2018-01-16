@@ -4,6 +4,8 @@ Visualiser for Mechwarrior Online competitive match data collected from the MWO 
 
 Node.js app for intake, elasticsearch backend, Kibana front.
 
+Live at http://mwoapi.mrbcleague.com/
+
 ### Node
 
 * install node: sudo apt-get install -y nodejs
