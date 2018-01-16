@@ -3,6 +3,7 @@ var express = require('express')
   , app = express()
 
 app.use(logger('dev'))
+app.use(express.static(__dirname + '/static'))
 app.set('view engine', 'jade')
 app.set('views', './source/templates')
 
