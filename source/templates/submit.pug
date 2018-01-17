@@ -1,0 +1,9 @@
+extend default
+
+block content
+
+  p Paste in your match ID here to preview and add it to the indexer
+
+  input#matchid.form-control(type='text', placeholder='matchid' name='matchid') 
+  button#preview(onclick='previewapi()') Preview Match Details
+  div#previewfill

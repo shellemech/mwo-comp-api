@@ -1,10 +1,10 @@
 var express = require('express')
-  , logger = require('morgan')
-  , app = express()
+var logger = require('morgan')
+var app = express()
 
 app.use(logger('dev'))
-app.use(express.static(__dirname + '/static'))
-app.set('view engine', 'jade')
+app.use(express.static('static'))
+app.set('view engine', 'pug')
 app.set('views', './source/templates')
 
 app.get('/', function(req, res) {

@@ -15,10 +15,11 @@
   "author": "ShelleMech",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "jade": "^1.11.0",
     "morgan": "^1.9.0",
     "nodemon": "^1.9.2",
+    "pug": "^2.0.0-rc.4",
     "stylus": "^0.54.5"
   }
 }
