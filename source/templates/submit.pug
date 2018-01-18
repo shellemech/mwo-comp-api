@@ -2,8 +2,14 @@ extend default
 
 block content
 
-  p Paste in your match ID here to preview and add it to the indexer
+  p Paste in your match ID here to preview and add it to the indexer:
 
-  input#matchid.form-control(type='text', placeholder='matchid' name='matchid') 
-  button#preview(onclick='previewapi()') Preview Match Details
-  div#previewfill
+  input#matchid(type='text', placeholder='matchid' name='matchid')
+  button#getmatch  Submit Match
+  
+  script.
+   $('#getmatch').click(function(){  
+     var thismatch = $('#matchid').val()   
+       location.href = '/match/'+thismatch
+    })
+  
