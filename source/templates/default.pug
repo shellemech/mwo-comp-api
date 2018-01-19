@@ -6,16 +6,20 @@ html
     title MRBC MWO API Tool
   body
     .header
-      h1.page-title MWO Comp API Match Viewer
+      h1.page-title MWO Comp API Match Indexer
 
     ul.nav
       li: a(href='/') Home
       li: a(href='/submit') Submit New Match
       li: a(href='http://kibana.mrbcleague.com', target='_blank') View Match Data
       li: a(href='/contact') Contact
-    
+
     .main-content
       block content
 
     .footer
-      p mrbcleague.com.
+      p node.js app for intake, python for POSTs, elasticsearch backend, Kibana front
+      p
+        a(href='https://github.com/shellemech/mwo-comp-api') github.com/shellemech/mwo-comp-api
+      p
+        a(href='https://mrbcleague.com') mrbcleague.com
