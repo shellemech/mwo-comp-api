@@ -1,9 +1,16 @@
 extend default
 
 block content
-  p.
-    Viewing tool for Mechwarrior Online competitive match data collected from the MWO API.
-  P.
-    tech notes: node.js app for intake, python for POSTs, elasticsearch backend, Kibana front.
-  p. 
-    <a href='https://github.com/shellemech/mwo-comp-api'>github.com/shellemech/mwo-comp-api</a>
+  p Database and analyser tools for Mechwarrior Online competitive match data collected from the MWO API.
+
+  p
+    h3 How to use
+
+    ul
+      li Play your private lobby match
+      li Publish your match data, and copy the id to your clipboard
+      li On this site, click on the <a href='/submit'>submit</a> link
+      li Paste your match id and press Submit
+      li Click on the provided link to view your match data in Kibana
+
+  p To analyse team results over time you can submit several matches and create graphs or charts using the stats.
