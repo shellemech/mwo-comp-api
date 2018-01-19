@@ -11,6 +11,7 @@ Live at http://mwoapi.mrbcleague.com/
 * install node: sudo apt-get install -y nodejs
 * install express: npm install -g express
 * clone repo: git clone https://github.com/shellemech/mwo-comp-api.git
+* get deps: npm install
 * start app: npm run-script start
 
 ### Elasticsearch & Kibana
