@@ -2,14 +2,16 @@ extend default
 
 block content
 
-  p Paste in your match ID here to preview and add it to the indexer:
+  p Paste in your match ID here to add it to the indexer:
 
-  input#matchid(type='text', placeholder='matchid' name='matchid')
-  button#getmatch  Submit Match
-  
-  script.
-   $('#getmatch').click(function(){  
-     var thismatch = $('#matchid').val()   
-       location.href = '/match/'+thismatch
-    })
-  
+  if (captcha)
+    form(method='POST', action='/match')
+      input#matchid(type='text', placeholder='matchid' name='matchid')
+      p !{captcha}
+      button#matchsub(type='submit') Submit Match
+  else
+    if (error)
+      div(style="color:red") Error : #{error}
+    else
+      div(style="color:green") Data : #{data}
+    a(href="/") Retry
