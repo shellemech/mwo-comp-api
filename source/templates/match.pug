@@ -2,8 +2,7 @@ extend default
 
 block content
 
-  p #{output}
+  p !{output}
 
-  p The match should be available at: 
-  a(href='http://kibana.mrbcleague.com/app/kibana#/doc/903df740-fc9b-11e7-8668-8986c2dc61ab/mwo/match?id='+matchid) kibana.mrbcleague.com/app/kibana#/doc/903df740-fc9b-11e7-8668-8986c2dc61ab/mwo/match?id=#{matchid}
+  p !{kibanaurl}
 

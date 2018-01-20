@@ -6,57 +6,98 @@
   box-sizing border-box
 
 body
-  font-family 'Source Code Pro', monospace
-  font-size 14px
+  font-family 'Open Sans',sans-serif
+  font-size 13.5px
+  background-color #303030
+  color #8e8e8e
+  line-height 1.4
+  padding 2px
+
+a 
+  color #dab526
+
+input
+  border 1px solid #111
+  margin 2px 0
+  padding .2em
+  background-color #252525
+  color #d6d6d6
+
+button:hover
+  background-color: #dcdcdc
+  color #d6d6d6
+  border 1px solid #505050
+  cursor pointer
+
+button
+  border solid 1px #1a1a1a
+  color #dab926
+  background -webkit-linear-gradient(#262626,#303030)
+  background -moz-linear-gradient(#262626,#303030)
+  background linear-gradient(#262626,#303030)
 
 .header
-  background url('https://mrbcleague.com/images/logopack/MRBCHeaderNoBack.png')
+  background url('https://mrbcleague.com/images/logopack/MRBCHeaderNoBack.png') #2d2d2d
   background-position center
 
   .page-title
     font-weight 500
     font-size 22px
     text-align center
-    padding-top 220px
+    padding-top 250px
     padding-bottom 25px
     text-transform uppercase
     color #580000
 
-.nav
-  background #000
-  text-align center
+  .insetshadow
+    color: #202020
+    letter-spacing .1em
+    text-shadow -1px -1px 1px #111, 2px 2px 1px #363636
 
+.nav
+  background #1c1c1c
+  text-align center
+  border-bottom 1px solid #d6d6d6
+  
   li
     display inline-block
 
   a
     display inline-block
     padding 20px
-    color #fff
+    color #d6d6d6
     text-decoration none
+    text-transform uppercase
+    letter-spacing 0.06px
 
     &:hover
-      background-color #580000
-      text-decoration underline
+      background-color #2c2c2c
 
 .main-content
   margin 50px auto
-  max-width 600px
+  max-width 700px
   list-style-position inside
 
   p
     line-height 1.6
     margin-bottom 1.7em
 
+.boilertext
+  font-size 16px
+  color #d6d6d6
+
 .footer
   margin 50px auto
-  max-width 600px
+  max-width 700px
   border-top 1px solid #444
   padding 20px 0
 
   p
     color #444
     font-size 12px
+
+.emph
+  color #d6d6d6
 
 #matchid
   padding: 8px

@@ -2,6 +2,10 @@ extend default
 
 block content
 
+  p
+
+    h4 SUBMIT
+
   p Paste in your match ID here to add it to the indexer:
 
   if (captcha)
@@ -11,7 +15,7 @@ block content
       button#matchsub(type='submit') Submit Match
   else
     if (error)
-      div(style="color:red") Error : #{error}
+      div(style="color:red") Recaptcha Error : #{error}
     else
       div(style="color:green") Data : #{data}
-    a(href="/") Retry
+    a(href="/submit") Retry

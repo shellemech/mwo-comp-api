@@ -30,7 +30,7 @@ def postmatchdata(json):
   json+='\n'
   esobj+=json
   try:
-    espost = requests.post('http://localhost:9200/_bulk?pretty', auth=requests.auth.HTTPBasicAuth('mwopost', mwopostpw), headers=headers, data=esobj)
+    espost = requests.post('http://localhost:9200/_bulk?pretty', headers=headers, data=esobj)
   except requests.exceptions.RequestException as e:
     print('Elasticsearch POST Error: ', e)
     sys.exit(1) 
@@ -46,5 +46,4 @@ def postmatchdata(json):
 if __name__ == '__main__':
   matchid = sys.argv[1]
   apikey = os.environ['apikey']
-  mwopostpw = os.environ['mwopostpw']
   main()

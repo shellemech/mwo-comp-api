@@ -1,0 +1,20 @@
+extend default
+
+block content
+  p
+    h4 FAQ
+
+  p #[span.emph How can I check if my match is already in the database?] You don't need to! You can submit it anyway - The indexer will only store a match once as the match id is unique. If you still want to check, see useful searches below.
+    
+  p #[span.emph Can I create my own charts and dashboard items in Kibana?] Kibana is setup for public access for now, so anyone can create searches or charts. Anyone can also delete them, so use as a temporary resource.
+
+  p #[span.emph Can I search for MRBC matches?] We plan to add season 10 results automatically under a different index. More details to follow.
+  
+  p
+    h4 USEFUL QUERIES
+
+  p
+    ul
+      li #[span.emph Search for a match by id:] _id:12345678
+      li #[span.emph Search for matches for my team:] UserDetails.UnitTag:OMC
+      li #[span.emph Search for matches with a particular pilot:] UserDetails.Username:live1991
