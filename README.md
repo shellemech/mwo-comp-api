@@ -4,7 +4,7 @@ Visualiser for Mechwarrior Online competitive match data collected from the MWO 
 
 Node.js app for intake, python for POSTs, elasticsearch backend, Kibana front.
 
-Live at http://mwoapi.mrbcleague.com/
+Live at https://mwoapi.mrbcleague.com/
 
 ### Node
 
