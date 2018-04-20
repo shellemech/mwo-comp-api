@@ -30,7 +30,7 @@ def postmatchdata(json):
   json+='\n'
   esobj+=json
   try:
-    espost = requests.post('http://localhost:9200/_bulk?pretty', headers=headers, data=esobj)
+    espost = requests.post('http://172.31.4.187:9200/_bulk?pretty', headers=headers, data=esobj)
   except requests.exceptions.RequestException as e:
     print('Elasticsearch POST Error: ', e)
     sys.exit(1) 
